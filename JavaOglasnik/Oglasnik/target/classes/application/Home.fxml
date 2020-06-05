@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.HomeController">
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="Artikli">
+            <items>
+                  <Menu mnemonicParsing="false" text="Automobili">
+                    <items>
+                      <MenuItem mnemonicParsing="false" onAction="#prikaziEkranZaAutomobile" text="Pretraga" />
+                        <MenuItem mnemonicParsing="false" onAction="#unosNovogAutomobilaWindow" text="Unos" />
+                    </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Stanovi">
+                     <items>
+                        <MenuItem mnemonicParsing="false" onAction="#prikaziEkranZaStanove" text="Pretraga" />
+                        <MenuItem mnemonicParsing="false" onAction="#unosNovogStanaWindow" text="Unos" />
+                     </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Usluge">
+                     <items>
+                        <MenuItem mnemonicParsing="false" onAction="#prikaziEkranZaUsluge" text="Pretraga" />
+                        <MenuItem mnemonicParsing="false" onAction="#unosNoveUslugeWindow" text="Unos" />
+                     </items>
+                  </Menu>
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Korisnik">
+               <items>
+                  <Menu mnemonicParsing="false" text="Privatni Korisnik">
+                    <items>
+                      <MenuItem mnemonicParsing="false" onAction="#prikaziEkranZaPrivatneKorisnike" text="Pretraga" />
+                        <MenuItem mnemonicParsing="false" onAction="#unosNovogPrivatnogKorisnikaWindow" text="Unos" />
+                    </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Poslovni Korisnik">
+                    <items>
+                      <MenuItem mnemonicParsing="false" onAction="#prikaziEkranZaPoslovneKorisnike" text="Pretraga" />
+                        <MenuItem mnemonicParsing="false" onAction="#unosNovogPoslovnogKorisnikaWindow" text="Unos" />
+                    </items>
+                  </Menu>
+               </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="Prodaja">
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#EkranProdaje" text="Pretraga" />
+                  <MenuItem mnemonicParsing="false" onAction="#unosNoveProdajeWindow" text="Unos" />
+              </items>
+            </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+   <center>
+      <ImageView fitHeight="377.0" fitWidth="485.0" pickOnBounds="true" BorderPane.alignment="CENTER">
+         <image>
+            <Image url="file:/C:/Users/Antonio/OneDrive%20-%20Zagreb%20University%20of%20Applied%20Science/Java/Cosic-10/dat/mojOglasnik.jpg" />
+         </image>
+      </ImageView>
+   </center>
+</BorderPane>
